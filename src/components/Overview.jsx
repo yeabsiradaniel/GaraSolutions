@@ -4,13 +4,13 @@ const engines = [
   {
     tag: 'Active now',
     title: 'Software & Tech Solutions',
-    body: 'Custom software, digital products, and technology consulting delivered as a service to businesses across Africa — our near-term engine for revenue and technical capability.',
+    body: 'Custom software, digital products, and technology consulting delivered as a service to businesses across Africa; our near-term engine for revenue and technical capability.',
     variant: '',
   },
   {
     tag: 'The mission',
     title: 'Sharing Economy Platforms',
-    body: "Our own products, starting with mobility, that let people share what they have and access what they need — built on the capability our software arm creates.",
+    body: "Our own products, starting with mobility, that let people share what they have and access what they need; built on the capability our software arm creates.",
     variant: 'gold',
   },
 ]

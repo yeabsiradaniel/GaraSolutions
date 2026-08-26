@@ -2,7 +2,7 @@ import useReveal from '../hooks/useReveal'
 
 const problems = [
   {
-    title: 'Access to good software is limited',
+    title: 'Access to quality software is limited',
     body: "Many African businesses can't find affordable, locally-understood technology partners to build the tools they need to grow.",
   },
   {
