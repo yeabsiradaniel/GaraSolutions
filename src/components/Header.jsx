@@ -16,8 +16,9 @@ export default function Header() {
           <span className=""><img src="./logo.png" alt="logo" className='w-12 h-8' /></span>Gara Solutions
         </div>
         <div className="navlinks">
-          <a href="#overview">Overview</a>
           <a href="#products">Products</a>
+          <a href="#market">Market</a>
+          <a href="#traction">Traction</a>
           <a href="#vision">Vision</a>
           <a href="#team">Team</a>
           <a href="#contact">Contact</a>

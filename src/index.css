@@ -21,6 +21,8 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
+/* the header is fixed, so anchor jumps must clear it */
+section[id], footer[id]{scroll-margin-top:92px;}
 body{
   background:var(--ink);
   color:var(--text-hi);
