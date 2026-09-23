@@ -302,8 +302,9 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between;}
 }
 
 /* ---------- market ---------- */
-.market{padding:130px 0;}
+.market{padding:130px 0; background:var(--parchment-2);}
 .market-head{max-width:600px; margin-bottom:64px;}
+.market-head h2 em{color:#B4791F;}
 .market-head h2{font-size:clamp(28px,3.4vw,40px);}
 .stat-grid{
   display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
@@ -318,6 +319,59 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between;}
 }
 .stat .lbl{margin-top:16px; font-size:14.5px; color:var(--paper-text-muted); max-width:260px;}
 .market-source{margin-top:26px; font-size:12px; color:var(--paper-text-muted); font-family:'IBM Plex Mono',monospace;}
+
+/* ---------- business model ---------- */
+.model{padding:120px 0; background:var(--ink-2);}
+.model-head{max-width:620px;}
+.model-head h2{font-size:clamp(28px,3.4vw,40px); color:var(--text-hi);}
+.model-head p{margin-top:20px; color:var(--text-lo); font-size:17px; max-width:520px;}
+.model-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:26px;
+  margin-top:56px;
+}
+.m-card{
+  border:1px solid var(--line-dark);
+  padding:32px 28px;
+  border-radius:2px;
+  transition:border-color .3s ease, transform .3s ease;
+}
+.m-card:hover{border-color:var(--green); transform:translateY(-4px);}
+.m-card .tag{font-size:11px; color:var(--gold); margin-bottom:18px;}
+.m-card h4{font-size:19px; font-weight:500; margin-bottom:12px;}
+.m-card p{color:var(--text-lo); font-size:15px;}
+
+/* ---------- traction ---------- */
+.traction{padding:130px 0;}
+.traction-head{max-width:620px; margin-bottom:60px;}
+.traction-head h2{font-size:clamp(28px,3.4vw,40px);}
+.traction-head h2 em{color:#B4791F;}
+.traction-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+  background:var(--line-light); border:1px solid var(--line-light);}
+.t-card{background:var(--parchment); padding:38px 32px; transition:background .3s ease;}
+.t-card:hover{background:var(--parchment-2);}
+.t-num{font-size:11.5px; color:var(--teal); display:block; margin-bottom:18px;}
+.t-card h4{font-size:19px; font-weight:500; margin-bottom:12px;}
+.t-card p{color:var(--paper-text-muted); font-size:15px;}
+.traction-note{
+  margin-top:40px;
+  font-family:'Fraunces',serif; font-style:italic;
+  font-size:19px; color:var(--teal); max-width:620px;
+}
+
+/* ---------- mission & vision ---------- */
+.mv-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:26px;
+  margin-top:72px; max-width:880px; text-align:left;
+}
+.mv{
+  border:1px solid var(--line-dark);
+  padding:32px 28px;
+  border-radius:2px;
+  transition:border-color .3s ease, transform .3s ease;
+}
+.mv:hover{border-color:var(--green); transform:translateY(-4px);}
+.mv h3{font-size:20px; color:var(--gold); margin-bottom:14px;}
+.mv p{color:var(--text-lo); font-size:15.5px;}
 
 /* ---------- team ---------- */
 .team{padding:120px 0; background:var(--ink-2);}
@@ -367,7 +421,8 @@ footer h2{font-size:clamp(32px,4.6vw,56px); max-width:640px; margin:0 auto; colo
   .navlinks{display:none;}
   .hero-grid{grid-template-columns:1fr; gap:60px;}
   .hero-visual{height:280px;}
-  .engine-grid, .problem-cards, .product-grid, .team-grid{grid-template-columns:1fr;}
+  .engine-grid, .problem-cards, .product-grid, .team-grid,
+  .model-grid, .traction-grid, .mv-grid{grid-template-columns:1fr;}
   .stat-grid{grid-template-columns:1fr;}
   .contact-row{gap:32px;}
   .foot-bottom{flex-direction:column; gap:8px; text-align:center;}
