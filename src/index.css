@@ -229,7 +229,7 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between;}
 .p-card h4{font-size:19px; margin-bottom:12px; font-weight:500;}
 .p-card p{color:var(--text-lo); font-size:15px;}
 
-#overview.eyebrow::befrore, #overview.eyebrow::after{
+#overview .eyebrow::before, #overview .eyebrow::after{
   background-color: #0DA200;
 }
 
@@ -340,6 +340,12 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between;}
 .member h4{font-size:19px; font-weight:500; margin-bottom:4px;}
 .member .role{color:var(--gold); font-size:12.5px; margin-bottom:14px; font-family:'IBM Plex Mono',monospace;}
 .member p{color:var(--text-lo); font-size:14.5px;}
+.member .creds{
+  margin-top:14px; padding-top:14px;
+  border-top:1px solid var(--line-dark);
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11.5px; line-height:1.7; color:var(--teal);
+}
 
 /* ---------- footer / contact ---------- */
 footer{padding:120px 0 60px; text-align:center;}

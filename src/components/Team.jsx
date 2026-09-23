@@ -5,19 +5,36 @@ const team = [
     initials: 'MM',
     name: 'Mulutsega Moges',
     role: 'CO-FOUNDER · CSO',
-    focus: 'Business, operations & growth.',
+    focus: 'Business, execution & growth.',
+    creds: 'B.Sc. Civil Engineering · BDS Expert',
   },
   {
-    initials: 'HL',
-    name: 'Hayou Lemessa',
-    role: 'CO-FOUNDER · CTO',
-    focus: 'Product, technology & direction.',
+    initials: 'NB',
+    name: 'Nazrawit Berhanu',
+    role: 'CO-FOUNDER · COO',
+    focus: 'Business, operations & optimization.',
+    creds: 'B.Sc. Computer Science · M.Sc. Business Management · AI Expert',
   },
   {
     initials: 'YD',
     name: 'Yeabsira Daniel',
-    role: 'CO-FOUNDER · COO',
-    focus: 'Technology, operations & product development.',
+    role: 'CO-FOUNDER · CTO',
+    focus: 'Technology, operations & product.',
+    creds: 'B.Sc. Software Engineering · AI Expert · UI/UX',
+  },
+  {
+    initials: 'HL',
+    name: 'Hayou Lemessa',
+    role: 'CO-FOUNDER · CPO',
+    focus: 'Product, information & technology.',
+    creds: 'B.Sc. Electrical Engineering · UI/UX',
+  },
+  {
+    initials: 'GM',
+    name: 'Gelila Mekonnen',
+    role: 'CO-FOUNDER · CXO',
+    focus: 'Customer experience, communications & service.',
+    creds: 'B.Sc. Electromechanical Engineering',
   },
 ]
 
@@ -40,6 +57,7 @@ export default function Team() {
               <h4>{m.name}</h4>
               <div className="role">{m.role}</div>
               <p>{m.focus}</p>
+              <div className="creds">{m.creds}</div>
             </div>
           ))}
         </div>

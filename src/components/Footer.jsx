@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="contact-row">
           <div className="contact-item">
             <span className="mono">Website</span>
-            <a href="https://www.garasolutions.com">www.garasolutions.com</a>
+            <a href="https://garasolutions.netlify.app">garasolutions.netlify.app</a>
           </div>
           <div className="contact-item">
             <span className="mono">Email</span>
