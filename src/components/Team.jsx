@@ -15,7 +15,7 @@ const team = [
     name: 'Nazrawit Berhanu',
     role: 'CO-FOUNDER · COO',
     focus: 'Business, operations & optimization.',
-    creds: 'B.Sc. Computer Science · M.Sc. Business Management · AI Expert',
+    creds: 'B.Sc. Computer Science · M.Sc. Project Management (in progress) · AI Engineer',
   },
   {
     initials: 'YD',
