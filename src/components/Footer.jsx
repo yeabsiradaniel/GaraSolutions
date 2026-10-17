@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div className="contact-item">
             <span className="mono">Email</span>
-            <a href="mailto:gara.solutions.et@gmail.com">gara.solutions.et@gmail.com</a>
+            <a href="mailto:gara.systems@gmail.com">gara.systems@gmail.com</a>
           </div>
           <div className="contact-item">
             <span className="mono">Location</span>
