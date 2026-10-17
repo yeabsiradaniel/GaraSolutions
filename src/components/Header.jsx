@@ -13,7 +13,7 @@ export default function Header() {
     <header className={scrolled ? 'scrolled' : ''}>
       <nav className="wrap">
         <div className="logo">
-          <span className=""><img src="./logo.png" alt="logo" className='w-12 h-8' /></span>Gara Solutions
+          <span className=""><img src="./logo.png" alt="logo" className='w-12 h-8' /></span>Gara Systems
         </div>
         <div className="navlinks">
           <a href="#products">Products</a>

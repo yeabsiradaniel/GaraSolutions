@@ -64,7 +64,7 @@ export default function Hero() {
     <section className="hero">
       <div className="wrap hero-grid">
         <div>
-          <div className="eyebrow">GARA SOLUTIONS</div>
+          <div className="eyebrow">GARA SYSTEMS</div>
           <h1>
             Building trust <em>without boundaries.</em>
           </h1>

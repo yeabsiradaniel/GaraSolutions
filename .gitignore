@@ -25,3 +25,6 @@ dist-ssr
 
 # Source decks / internal collateral
 slide/
+
+# Local deploy bundle
+*.zip

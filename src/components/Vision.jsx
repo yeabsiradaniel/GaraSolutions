@@ -9,7 +9,7 @@ export default function Vision() {
       <div className="wrap reveal" ref={ref}>
         <div className="eyebrow">ACCESS OVER OWNERSHIP</div>
         <blockquote>
-          Gara Solutions is shifting the fundamental mindset from{' '}
+          Gara Systems is shifting the fundamental mindset from{' '}
           <span className="from">"What do I need to own?"</span> to "What do
           I need to access?"
         </blockquote>
