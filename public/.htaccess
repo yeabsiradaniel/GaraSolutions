@@ -31,12 +31,13 @@
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-  # Single page app: hand any unknown path back to index.html rather than 404.
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L]
-  RewriteRule ^ index.html [L]
 </IfModule>
 
+# No SPA fallback rewrite here on purpose: this site is one page with anchor
+# links, not a client-side router, so there is no path for the server to hand
+# back. Rewriting unknown paths to index.html would answer them 200 OK and let
+# search engines index unlimited soft-404 duplicates of the homepage.
+#
+# ErrorDocument still shows visitors the site rather than a bare Apache error,
+# but Apache keeps the 404 status, which is what crawlers read.
 ErrorDocument 404 /index.html
