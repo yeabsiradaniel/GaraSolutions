@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
 
         <div className="foot-bottom">
-          <span>© 2026 Gara Systems</span>
+          <span>© 2026 Gara Systems PLC</span>
           <span>Building trust without boundaries.</span>
         </div>
       </div>
