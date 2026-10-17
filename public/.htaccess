@@ -20,10 +20,19 @@
   </FilesMatch>
 </IfModule>
 
-# Single page app: hand any unknown path back to index.html rather than 404.
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # Force HTTPS. Safe only because a valid certificate is already issued;
+  # enabling this without one makes every browser show a hard security error.
+  # The second condition keeps shared hosts that terminate TLS at a proxy
+  # from looping, since %{HTTPS} reads as off behind one.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Single page app: hand any unknown path back to index.html rather than 404.
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
